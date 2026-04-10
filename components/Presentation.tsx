@@ -197,27 +197,7 @@ export default function Presentation() {
         </div>
       </div>
 
-      {/* Progress dots */}
-      <div style={{
-        position: 'fixed',
-        bottom: 8,
-        left: '50%',
-        transform: 'translateX(-50%)',
-        display: 'flex',
-        gap: 5,
-        pointerEvents: 'none',
-        zIndex: 100,
-      }}>
-        {slides.map((_, i) => (
-          <div key={i} style={{
-            width: i === current ? 18 : 5,
-            height: 3,
-            borderRadius: 2,
-            background: i === current ? 'rgba(26,86,160,0.6)' : 'rgba(0,0,0,0.13)',
-            transition: 'width 200ms ease, background 200ms ease',
-          }} />
-        ))}
-      </div>
+      {/* Progress dots removed — slide counter (01/15) is sufficient navigation feedback */}
     </div>
   );
 }

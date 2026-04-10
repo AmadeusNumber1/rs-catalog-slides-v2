@@ -7,6 +7,12 @@ const lines = [
   'Share with clients in one click. Control who downloads what.',
 ];
 
+const heroBadges = [
+  'AI Auto-tagging',
+  'Natural Language Search',
+  'Your server. Your data.',
+];
+
 export default function Slide15Close() {
   return (
     <div style={{
@@ -78,7 +84,7 @@ export default function Slide15Close() {
         </h1>
 
         {/* Closing lines */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 12 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 32 }}>
           {lines.map((line, i) => (
             <p key={i} style={{
               fontSize: 'clamp(13px, 1.4vw, 17px)',
@@ -92,6 +98,44 @@ export default function Slide15Close() {
             </p>
           ))}
         </div>
+
+        {/* Hero-style feature badges */}
+        <div style={{
+          display: 'flex',
+          gap: 12,
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          marginBottom: 36,
+        }}>
+          {heroBadges.map((badge, i) => (
+            <div key={i} style={{
+              background: '#FFFFFF',
+              border: '1px solid #E5E7EB',
+              borderRadius: 100,
+              padding: '8px 18px',
+              fontSize: 13,
+              fontWeight: 600,
+              color: '#374151',
+              boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
+              animation: `float-up 0.5s ease ${0.47 + i * 0.09}s forwards`,
+              opacity: 0,
+            }}>
+              {badge}
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <p style={{
+          fontSize: 'clamp(22px, 3vw, 36px)',
+          fontWeight: 800,
+          letterSpacing: '-0.02em',
+          color: '#1A56A0',
+          animation: 'float-up 0.5s ease 0.75s forwards',
+          opacity: 0,
+        }}>
+          Let&apos;s build it.
+        </p>
       </div>
 
       {/* Animated waveform */}

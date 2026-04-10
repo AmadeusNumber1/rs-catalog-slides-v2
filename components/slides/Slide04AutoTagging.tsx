@@ -65,7 +65,7 @@ export default function Slide04AutoTagging() {
           marginBottom: 14,
           animation: 'float-up 0.4s ease forwards',
         }}>
-          AI Analysis
+          AI AUTO-TAGGING
         </div>
 
         <h2 style={{
@@ -88,7 +88,7 @@ export default function Slide04AutoTagging() {
           animation: 'float-up 0.4s ease 0.1s forwards',
           opacity: 0,
         }}>
-          ~30 seconds per track. Five layers of open-source AI. All running locally.
+          Five layers of open-source AI. All running locally.
         </p>
 
         {/* AI layer cards */}

@@ -96,7 +96,7 @@ export default function Slide01Hero() {
           gap: 12,
           flexWrap: 'wrap',
           justifyContent: 'center',
-          marginBottom: 0,
+          marginBottom: 16,
         }}>
           {['AI Auto-tagging', 'Natural Language Search', 'Your server. Your data.'].map((badge, i) => (
             <div key={i} style={{
@@ -114,6 +114,26 @@ export default function Slide01Hero() {
               {badge}
             </div>
           ))}
+        </div>
+
+        {/* Search & Find badge */}
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: 6,
+          border: '1px solid rgba(26,86,160,0.5)',
+          borderRadius: 100,
+          padding: '5px 18px',
+          fontSize: 13,
+          fontWeight: 600,
+          color: '#1A56A0',
+          letterSpacing: '0.12em',
+          textTransform: 'uppercase',
+          animation: 'float-up 0.5s ease 0.25s forwards',
+          opacity: 0,
+        }}>
+          <span>🔍</span>
+          <span>Search &amp; Find</span>
         </div>
       </div>
 
