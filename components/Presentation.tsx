@@ -13,12 +13,11 @@ import Slide09ShareLinks from './slides/Slide09ShareLinks';
 import Slide10Security from './slides/Slide10Security';
 import Slide11Hardware from './slides/Slide11Hardware';
 import Slide12TechStack from './slides/Slide12TechStack';
-import Slide13CostVsSaaS from './slides/Slide13CostVsSaaS';
 import Slide14Included from './slides/Slide14Included';
 import Slide15Close from './slides/Slide15Close';
 
 const slides = [
-  { component: Slide01Hero,        title: 'RS Catalog' },
+  { component: Slide01Hero,        title: 'RS.Catalog' },
   { component: Slide02Problem,     title: 'The Problem' },
   { component: Slide03WhatItIs,    title: 'The Solution' },
   { component: Slide04AutoTagging, title: 'AI Analysis' },
@@ -30,12 +29,11 @@ const slides = [
   { component: Slide10Security,    title: 'Security' },
   { component: Slide11Hardware,    title: 'Hardware' },
   { component: Slide12TechStack,   title: 'Tech Stack' },
-  { component: Slide13CostVsSaaS,  title: 'Cost Comparison' },
   { component: Slide14Included,    title: "What's Included" },
   { component: Slide15Close,       title: 'Close' },
 ];
 
-const TOTAL = slides.length;
+const TOTAL = slides.length; // 14
 
 export default function Presentation() {
   const [current, setCurrent] = useState(0);
@@ -101,9 +99,6 @@ export default function Presentation() {
   const slideTitle = slides[current].title;
   const num = String(current + 1).padStart(2, '0');
   const tot = String(TOTAL).padStart(2, '0');
-
-  // All slides are white — no dark slides
-  const isDark = false;
 
   return (
     <div
@@ -177,6 +172,7 @@ export default function Presentation() {
         pointerEvents: 'none',
         zIndex: 100,
       }}>
+        {/* Slide title label */}
         <div style={{
           fontSize: 11,
           fontWeight: 700,
@@ -186,6 +182,8 @@ export default function Presentation() {
         }}>
           {slideTitle}
         </div>
+
+        {/* Slide counter: 01 / 14 */}
         <div style={{
           fontSize: 13,
           fontWeight: 600,
@@ -196,8 +194,6 @@ export default function Presentation() {
           {num} / {tot}
         </div>
       </div>
-
-      {/* Progress dots removed — slide counter (01/15) is sufficient navigation feedback */}
     </div>
   );
 }

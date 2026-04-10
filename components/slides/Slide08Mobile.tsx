@@ -80,26 +80,36 @@ export default function Slide08Mobile() {
         </div>
       </div>
 
-      {/* Right — iPhone screenshot */}
+      {/* Right — iPhone screenshot — full phone, no crop */}
       <div style={{
-        flex: '0 0 auto',
+        flex: '1 1 auto',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         animation: 'float-up 0.5s ease 0.15s forwards',
         opacity: 0,
-        display: 'flex',
-        justifyContent: 'center',
+        minWidth: 0,
       }}>
         <div style={{
           boxShadow: '0 24px 80px rgba(0,0,0,0.16)',
           borderRadius: 36,
-          overflow: 'hidden',
           border: '2px solid #E5E7EB',
+          display: 'inline-flex',
+          overflow: 'visible',
         }}>
           <Image
             src="/RS_Catalog_Mobile_v2.png"
-            alt="RS Catalog Mobile"
+            alt="RS.Catalog Mobile"
             width={280}
             height={580}
-            style={{ display: 'block', width: 'auto', height: 480 }}
+            style={{
+              display: 'block',
+              objectFit: 'contain',
+              width: 'auto',
+              height: 480,
+              maxWidth: '100%',
+              borderRadius: 34,
+            }}
           />
         </div>
       </div>

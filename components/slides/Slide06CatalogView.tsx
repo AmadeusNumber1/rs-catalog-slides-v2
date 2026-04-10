@@ -73,7 +73,7 @@ export default function Slide06CatalogView() {
           <div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
             <Image
               src="/RS_Catalog_UI_Template.png"
-              alt="RS Catalog"
+              alt="RS.Catalog"
               fill
               style={{ objectFit: 'cover', objectPosition: 'top' }}
             />

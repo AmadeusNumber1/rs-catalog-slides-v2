@@ -142,7 +142,7 @@ export default function Slide04AutoTagging() {
         <BrowserChrome>
           <Image
             src="/RS_Catalog_Upload_Page.png"
-            alt="RS Catalog Upload Page"
+            alt="RS.Catalog Upload Page"
             width={800}
             height={520}
             style={{ width: '100%', height: 'auto', display: 'block' }}

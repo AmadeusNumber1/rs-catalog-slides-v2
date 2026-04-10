@@ -115,7 +115,7 @@ export default function Slide05Search() {
         <BrowserChrome>
           <Image
             src="/RS_Catalog_UI_Template.png"
-            alt="RS Catalog UI"
+            alt="RS.Catalog UI"
             width={900}
             height={580}
             style={{ width: '100%', height: 'auto', display: 'block' }}

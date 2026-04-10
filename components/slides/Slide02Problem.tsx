@@ -112,7 +112,7 @@ export default function Slide02Problem() {
           animation: 'float-up 0.4s ease 0.45s forwards',
           opacity: 0,
         }}>
-          These are solved problems. RS Catalog fixes all of them — on hardware you own.
+          These are solved problems. RS.Catalog fixes all of them — on hardware you own.
         </div>
       </div>
     </div>

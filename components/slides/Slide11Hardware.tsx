@@ -1,12 +1,11 @@
 'use client';
 
 const specs = [
-  { label: 'CPU', value: '32-core', unit: 'Apple M2 Ultra' },
-  { label: 'Memory', value: '192 GB', unit: 'Unified RAM' },
+  { label: 'CPU', value: '32-core', unit: 'Apple M3 Ultra' },
+  { label: 'Memory', value: '192 GB', unit: 'Unified Memory' },
   { label: 'Storage', value: '8 TB', unit: 'NVMe SSD' },
   { label: 'GPU', value: '80-core', unit: 'GPU' },
   { label: 'Neural Engine', value: '32-core', unit: 'Neural Engine' },
-  { label: 'AI Performance', value: '31.6 TOPS', unit: 'On-chip AI' },
 ];
 
 export default function Slide11Hardware() {
@@ -40,17 +39,28 @@ export default function Slide11Hardware() {
           fontWeight: 700,
           letterSpacing: '-0.025em',
           color: '#0D1117',
-          marginBottom: 40,
+          marginBottom: 12,
           animation: 'float-up 0.4s ease 0.05s forwards',
           opacity: 0,
         }}>
           Built on Apple Silicon.
         </h2>
 
-        {/* Specs grid */}
+        <p style={{
+          fontSize: 'clamp(14px, 1.5vw, 18px)',
+          color: '#6B7280',
+          marginBottom: 36,
+          fontWeight: 400,
+          animation: 'float-up 0.4s ease 0.1s forwards',
+          opacity: 0,
+        }}>
+          Mac Studio M3 Ultra — the most powerful desktop we&apos;ve ever built.
+        </p>
+
+        {/* Specs grid — 5 cards */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: 'repeat(5, 1fr)',
           gap: 16,
           marginBottom: 36,
         }}>
@@ -61,7 +71,7 @@ export default function Slide11Hardware() {
               borderRadius: 14,
               padding: '24px 20px',
               textAlign: 'center',
-              animation: `float-up 0.4s ease ${0.1 + i * 0.07}s forwards`,
+              animation: `float-up 0.4s ease ${0.15 + i * 0.07}s forwards`,
               opacity: 0,
             }}>
               <div style={{
@@ -75,7 +85,7 @@ export default function Slide11Hardware() {
                 {spec.label}
               </div>
               <div style={{
-                fontSize: 28,
+                fontSize: 26,
                 fontWeight: 800,
                 color: '#1A56A0',
                 letterSpacing: '-0.02em',
@@ -95,7 +105,7 @@ export default function Slide11Hardware() {
           lineHeight: 1.7,
           maxWidth: 600,
           margin: '0 auto',
-          animation: 'float-up 0.4s ease 0.6s forwards',
+          animation: 'float-up 0.4s ease 0.55s forwards',
           opacity: 0,
         }}>
           One machine. Local AI, waveform storage, streaming server, and VPN endpoint

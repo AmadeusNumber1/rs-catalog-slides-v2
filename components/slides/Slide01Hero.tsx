@@ -32,27 +32,6 @@ export default function Slide01Hero() {
         zIndex: 1,
         animation: 'float-up 0.6s ease forwards',
       }}>
-        {/* Logo badge */}
-        <div style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 8,
-          background: 'rgba(26,86,160,0.07)',
-          border: '1px solid rgba(26,86,160,0.15)',
-          borderRadius: 100,
-          padding: '6px 16px',
-          marginBottom: 40,
-        }}>
-          <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#1A56A0' }} />
-          <span style={{
-            fontSize: 11,
-            fontWeight: 700,
-            letterSpacing: '0.25em',
-            color: '#1A56A0',
-            textTransform: 'uppercase',
-          }}>RS · CATALOG</span>
-        </div>
-
         {/* Main title */}
         <h1 style={{
           fontSize: 'clamp(56px, 8vw, 108px)',
@@ -135,34 +114,6 @@ export default function Slide01Hero() {
           <span>🔍</span>
           <span>Search &amp; Find</span>
         </div>
-      </div>
-
-      {/* Animated waveform bottom */}
-      <div style={{
-        position: 'absolute',
-        bottom: 40,
-        left: 0,
-        right: 0,
-        height: 60,
-        overflow: 'hidden',
-        opacity: 0.35,
-      }}>
-        <svg
-          viewBox="0 0 2400 60"
-          style={{
-            width: '200%',
-            height: '100%',
-            animation: 'wave 8s linear infinite',
-          }}
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,30 C50,5 100,55 150,30 C200,5 250,55 300,30 C350,5 400,55 450,30 C500,5 550,55 600,30 C650,5 700,55 750,30 C800,5 850,55 900,30 C950,5 1000,55 1050,30 C1100,5 1150,55 1200,30 C1250,5 1300,55 1350,30 C1400,5 1450,55 1500,30 C1550,5 1600,55 1650,30 C1700,5 1750,55 1800,30 C1850,5 1900,55 1950,30 C2000,5 2050,55 2100,30 C2150,5 2200,55 2250,30 C2300,5 2350,55 2400,30"
-            stroke="#1A56A0"
-            strokeWidth="2"
-            fill="none"
-          />
-        </svg>
       </div>
 
       {/* Confidential badge */}

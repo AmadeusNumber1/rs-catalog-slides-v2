@@ -51,12 +51,12 @@ export default function Slide03WhatItIs() {
           animation: 'float-up 0.4s ease 0.12s forwards',
           opacity: 0,
         }}>
-          Upload any audio file. RS Catalog analyses it automatically — BPM, key, mood, genre,
-          instrumentation, era, lyrics — in about 30 seconds. Everything stays on hardware you own.
+          Upload any audio file. RS.Catalog analyses it automatically — BPM, key, mood, genre,
+          instrumentation, era, lyrics. Everything stays on hardware you own.
           No cloud. No per-track fees. No subscriptions.
         </p>
 
-        {/* 3 pills */}
+        {/* 3 pills — all consistent blue style */}
         <div style={{
           display: 'flex',
           gap: 14,
@@ -65,22 +65,18 @@ export default function Slide03WhatItIs() {
           animation: 'float-up 0.4s ease 0.18s forwards',
           opacity: 0,
         }}>
-          {[
-            { label: 'AI-powered', color: '#1A56A0' },
-            { label: 'Self-hosted', color: '#059669' },
-            { label: 'Share-ready', color: '#7C3AED' },
-          ].map((pill, i) => (
+          {['AI-powered', 'Self-hosted', 'Share-ready'].map((label, i) => (
             <div key={i} style={{
               background: '#FFFFFF',
-              border: `1.5px solid ${pill.color}`,
+              border: '1.5px solid #1A56A0',
               borderRadius: 100,
               padding: '10px 24px',
               fontSize: 14,
               fontWeight: 700,
-              color: pill.color,
+              color: '#1A56A0',
               letterSpacing: '0.02em',
             }}>
-              {pill.label}
+              {label}
             </div>
           ))}
         </div>
