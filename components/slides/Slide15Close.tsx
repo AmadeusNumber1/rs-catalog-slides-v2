@@ -116,19 +116,7 @@ export default function Slide15Close() {
         </p>
       </div>
 
-      {/* Confidential */}
-      <div style={{
-        position: 'absolute',
-        bottom: 28,
-        right: 40,
-        fontSize: 11,
-        fontWeight: 600,
-        color: '#9CA3AF',
-        letterSpacing: '0.08em',
-        zIndex: 2,
-      }}>
-        Confidential · April 2026
-      </div>
+
     </div>
   );
 }

@@ -53,7 +53,7 @@ export default function Slide01Hero() {
           letterSpacing: '-0.01em',
           marginBottom: 16,
         }}>
-          Your music. Instantly found.
+          Search &amp; Find
         </p>
 
         {/* Sub */}
@@ -95,39 +95,10 @@ export default function Slide01Hero() {
           ))}
         </div>
 
-        {/* Search & Find badge */}
-        <div style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 6,
-          border: '1px solid rgba(26,86,160,0.5)',
-          borderRadius: 100,
-          padding: '5px 18px',
-          fontSize: 13,
-          fontWeight: 600,
-          color: '#1A56A0',
-          letterSpacing: '0.12em',
-          textTransform: 'uppercase',
-          animation: 'float-up 0.5s ease 0.25s forwards',
-          opacity: 0,
-        }}>
-          <span>🔍</span>
-          <span>Search &amp; Find</span>
-        </div>
+
       </div>
 
-      {/* Confidential badge */}
-      <div style={{
-        position: 'absolute',
-        bottom: 28,
-        right: 40,
-        fontSize: 11,
-        fontWeight: 600,
-        color: '#9CA3AF',
-        letterSpacing: '0.08em',
-      }}>
-        Confidential · April 2026
-      </div>
+
     </div>
   );
 }
